@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Overpass';
+	src: local('Overpass'), url(./fonts/overpass.woff2) format('woff2');
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	margin: auto;
+	font-family: "Overpass", sans-serif !important;
+	background-color: rgb(34, 34, 34);
+	color: rgb(242, 242, 242);
+}
+
+a {
+	color: #f2f2f2;
+}
+
+.row {
+	display: flex;
+}
+
+#app {
+	margin: 15px;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: #f2f2f2 !important;
+}
+
+.row {
+	display: flex !important;
+}
