@@ -2,7 +2,7 @@
     "name": "mt_react",
     "version": "0.1.0",
     "private": true,
-    "homepage": ".",
+    "homepage": "http://harou24.github.io/mt2",
     "dependencies": {
         "@svgr/webpack": "^5.5.0",
         "@testing-library/jest-dom": "^5.15.1",
@@ -12,7 +12,6 @@
         "@turf/random": "^6.5.0",
         "babel-plugin-styled-components": "^1.13.3",
         "d3": "^7.0.4",
-        "gh-pages": "^3.2.3",
         "point-in-svg-polygon": "^1.0.25",
         "rc-slider": "^9.7.4",
         "react": "^17.0.2",
@@ -22,13 +21,15 @@
         "svg-path-bbox": "^1.0.1",
         "web-vitals": "^1.1.2"
     },
-    "scripts": { 
+    "scripts": {
         "github": "gh-pages -d build",
         "cloudflare": "react-scripts build",
         "dev": "npm run start",
         "eject": "react-scripts eject",
         "test": "react-app-rewired test",
         "start": "react-scripts start",
+        "predeploy": "NODE_OPTIONS=--openssl-legacy-provider npm run build",
+        "deploy": "gh-pages -d build",
         "build": "react-scripts build"
     },
     "browserslist": {
@@ -44,6 +45,7 @@
         ]
     },
     "devDependencies": {
+        "gh-pages": "^4.0.0",
         "react-app-rewired": "^2.1.8",
         "url-loader": "^4.1.1"
     }
